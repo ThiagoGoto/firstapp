@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @biketour.name %>
+</p>
+
+<p>
+  <b>Cpf:</b>
+  <%= @biketour.cpf %>
+</p>
+
+<p>
+  <b>Birth:</b>
+  <%= @biketour.birth %>
+</p>
+
+<p>
+  <b>Bike:</b>
+  <%= @biketour.bike %>
+</p>
+
+
+<%= link_to 'Edit', edit_biketour_path(@biketour) %> |
+<%= link_to 'Back', biketours_path %>

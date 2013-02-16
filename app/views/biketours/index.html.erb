@@ -1,0 +1,29 @@
+<h1>Listing biketours</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Cpf</th>
+    <th>Birth</th>
+    <th>Bike</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @biketours.each do |biketour| %>
+  <tr>
+    <td><%= biketour.name %></td>
+    <td><%= biketour.cpf %></td>
+    <td><%= biketour.birth %></td>
+    <td><%= biketour.bike %></td>
+    <td><%= link_to 'Show', biketour %></td>
+    <td><%= link_to 'Edit', edit_biketour_path(biketour) %></td>
+    <td><%= link_to 'Destroy', biketour, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Biketour', new_biketour_path %>

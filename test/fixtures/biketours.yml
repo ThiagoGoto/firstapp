@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  cpf: MyString
+  birth: 2013-02-16
+  bike: MyString
+
+two:
+  name: MyString
+  cpf: MyString
+  birth: 2013-02-16
+  bike: MyString

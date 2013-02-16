@@ -1,4 +1,9 @@
 FirstApp::Application.routes.draw do
+  resources :biketours
+
+  root :to => "biketours#index"
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,0 +1,33 @@
+<%= form_for(@biketour) do |f| %>
+  <% if @biketour.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@biketour.errors.count, "error") %> prohibited this biketour from being saved:</h2>
+
+      <ul>
+      <% @biketour.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :cpf %><br />
+    <%= f.text_field :cpf %>
+  </div>
+  <div class="field">
+    <%= f.label :birth %><br />
+    <%= f.date_select :birth %>
+  </div>
+  <div class="field">
+    <%= f.label :bike %><br />
+    <%= f.text_field :bike %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
